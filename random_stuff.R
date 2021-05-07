@@ -1,5 +1,5 @@
-### S&P 500 Simulations
-### Based on data since 2010
+##### S&P 500 Simulations
+##### Based on data since 2010
 
 ## 0. Read in data
 
@@ -62,18 +62,20 @@ plot(density(price_in_3m), main="Density of SnP500 in 3m", xlab="SnP500 in 3m");
 sum(price_in_3m >= 4500)/length(price_in_3m) # P(SnP500 >= 4500) in 3m
 sum(quarterly_return >= 10)/length(quarterly_return) # P(Quarterly return > 10%)
 
-## 3. Use binomial trees to price options
+##### Using binomial trees to estimate option value
+
 #     Note risk neutral valuation
 
-u <- exp(sd/100)
+# Up down jump sizes
+u <- exp(sd/100) # uses sd of S&P 500
 d <- 1/u
 
 sims <- 50000
 trading_days <- floor(250/4)
 price_today <- SnP500_close[length(SnP500_close)]
 
-
-r <- 1 # Annual (note - this is as a percentage)
+# Risk neutral 
+r <- 1 # Assumed risk free rate (note - this is as a percentage)
 risk_neutral_probability_up <- (exp(r/(100*365))-d)/(u-d)
 risk_neutral_price_in_3m <- c()
 
@@ -109,8 +111,8 @@ for (price in risk_neutral_price_in_3m) {
 
 mean(call_option_value)/(1+r/(100*4))
 
-###########
-# STOP LOSS
+##### ASSESSING EFFECTIVENESS OF STOP LOSS
+##### FOR ARBITRARY STOCK
 
 current_price <- 100
 stop_loss     <- 95
