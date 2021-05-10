@@ -22,4 +22,9 @@ server <- function(input, output) {
     
   })
   
+  output$textOutput <- renderText({
+    numStocks <- 10 - sum(c(input$ticker1, input$ticker2, input$ticker3, input$ticker4, input$ticker5, input$ticker6, input$ticker7, input$ticker8, input$ticker9, input$ticker10)=="")
+    paste("You have entered", numStocks, "ticker(s)")
+  })
+  
 }
