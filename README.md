@@ -1,6 +1,6 @@
-# R-Shiny ASX Portfolio Simulator
+### R-Shiny ASX Portfolio Simulator
 
-Steps involved to get the Portfolio Simulator working.
+# Steps involved to get the Portfolio Simulator working.
 
 1. Download R studio.
 
@@ -15,3 +15,6 @@ Steps involved to get the Portfolio Simulator working.
 3. Run the simulation by running (3) Simulator Run.
 
 4. Enter tickers when prompted and see portfolio simulations (may take some time).
+
+# Simulation theory
+
