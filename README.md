@@ -1,5 +1,8 @@
 # Forecast
-R-Shiny ASX Portfolio Forecaster
+R-Shiny ASX Portfolio Simulator
+
+
+Steps involved to get the Portfolio Simulator working.
 
 1. Download R studio.
 
