@@ -19,5 +19,6 @@
 ### Simulation theory
 
 Simulate returns for ASX 200 (E(Rm)) using some forecasting model.
+
 Simulate returns of individual tickers based on Ri = a + bRm + e on some given day.
 
