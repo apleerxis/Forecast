@@ -11,6 +11,8 @@
       (2) Simulator UI
   
       (3) Simulator Run
+      
+      (4) Simulator Functions
 
 3. Run the simulation by running (3) Simulator Run.
 
